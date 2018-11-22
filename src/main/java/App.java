@@ -8,6 +8,10 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        Vehicle vehicleA = new Vehicle("AE86", "Toyota");
+        Vehicle vehicleB = new Vehicle("GT-R", "NISSAN");
+        vehicleA.speedUp(50);
+        vehicleB.speedUp(100);
     }
 }
 
