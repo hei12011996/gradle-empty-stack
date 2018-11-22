@@ -20,6 +20,21 @@ public class App {
     }
 }
 
+class Driver {
+    private String name;
+    private Vehicle vehicle;
+
+    public Driver(String name, Vehicle vehicle) {
+        this.name = name;
+        this.vehicle = vehicle;
+    }
+
+    public void speedUp(int speed){
+        System.out.println(String.format("%s is trying to speed his/her vehicle up...", this.name));
+        this.vehicle.speedUp(speed);
+    }
+}
+
 class Vehicle {
     private String name;
     private String brand;
