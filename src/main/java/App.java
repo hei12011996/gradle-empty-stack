@@ -47,7 +47,25 @@ class Car extends Vehicle {
         if (speed <= 200) {
             super.speedUp(speed);
         } else {
-            System.out.println("Speed exist limitation! Failed to speed up!");
+            System.out.println("Speed exist limitation! This car failed to speed up!");
+        }
+    }
+}
+
+class Bus extends Vehicle {
+    private String name;
+    private String brand;
+
+    public Bus(String name, String brand){
+        super(name, brand);
+    }
+
+    @Override
+    public void speedUp(int speed){
+        if (speed <= 80) {
+            super.speedUp(speed);
+        } else {
+            System.out.println("Speed exist limitation! This bus failed to speed up!");
         }
     }
 }
