@@ -20,4 +20,7 @@ class Vehicle {
         this.brand = brand;
     }
 
+    public void speedUp(int speed){
+        System.out.println(String.format("A car with name: %s, brand: %s has speed up to %d!!!!!!!!!!!", this.name, this.brand, speed));
+    }
 }
