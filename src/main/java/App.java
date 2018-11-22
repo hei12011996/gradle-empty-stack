@@ -7,11 +7,16 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+//        System.out.println(new App().getGreeting());
         Vehicle vehicleA = new Vehicle("AE86", "Toyota");
         Vehicle vehicleB = new Vehicle("GT-R", "NISSAN");
         vehicleA.speedUp(50);
         vehicleB.speedUp(100);
+
+
+        Car car = new Car("A new car", "Yamaha");
+        car.speedUp(180);
+        car.speedUp(250);
     }
 }
 
