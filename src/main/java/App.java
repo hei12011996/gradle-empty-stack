@@ -10,3 +10,14 @@ public class App {
         System.out.println(new App().getGreeting());
     }
 }
+
+class Vehicle {
+    private String name;
+    private String brand;
+
+    public Vehicle(String name, String brand){
+        this.name = name;
+        this.brand = brand;
+    }
+
+}
