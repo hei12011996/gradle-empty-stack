@@ -28,3 +28,21 @@ class Vehicle {
         System.out.println(String.format("A car with name: %s, brand: %s has speed up to %d!!!!!!!!!!!", this.name, this.brand, speed));
     }
 }
+
+class Car extends Vehicle {
+    private String name;
+    private String brand;
+
+    public Car(String name, String brand){
+        super(name, brand);
+    }
+
+    @Override
+    public void speedUp(int speed){
+        if (speed <= 200) {
+            super.speedUp(speed);
+        } else {
+            System.out.println("Speed exist limitation! Failed to speed up!");
+        }
+    }
+}
